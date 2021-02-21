@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="script.js"></script>
+    <title>DashBash</title>
+  </head>
+  
+  <body>
+    
+    <input type="checkbox" id="check">
+    <!-- HEADER-->
+    <header>
+      <div class="left_area">
+        <!--<button for="check" class="toggle_btn" id="sidebar_btn">toggle</button>-->
+        <label for="check">
+          <a id="toggle">toggle</a>
+        </label>
+      </div>
+      <div class="right_area">
+        <h2 id="heading">Dashboard</h2>
+      </div>
+    </header>
+
+
+    <!--Sidebar -->
+    <div class="sidebar">
+      <center>
+        <img src="./images/guy.png" class="profile_image" alt="">
+        <h4>John</h4>
+      </center>
+      <a href="#" id="dashboard" onClick="clicked(1)"><i class="fas fa-desktop"></i><span>DashBoard</span></a>
+      <a href="#" id="user_profile" onClick="clicked(2)"><i class="fas fa-table"></i><span>User Profile</span></a>
+      <a href="#" id="form" onClick="clicked(3)"><i class="fas fa-cogs"></i><span>Form</span></a>
+      <a href="#" id="map" onClick="clicked(4)"><i class="fas fa-map"></i><span>Map</span></a>
+    </div>
+
+    <!-- Main Content-->
+    <main>
+    <div class="content">
+        <div class="dash_board" id="dash_board">
+          <img src="./images/graph1.png" id="graph1" />
+          <img src="./images/graph2.png" id="graph2" />
+        </div>
+
+        <!--
+        <div class="userprofile" id="userprofile">
+          <img src="user_profile.png" id="user_profile" />
+        </div>
+        -->
+
+        <div class="userprofile" id="userprofile">
+          <img src="./images/profile_bg.png" id="profile_bg" />
+          <center>
+              <img src="./images/guy.png" class="profile_image" >
+              <h4>John Wick</h4>
+              <h5>wickedJohn69</h6>
+              <h6>You Stabbed The Devil In The Back. To Him, This Isn’t <br>   Vengeance, This Is Justice.</h6>
+
+          </center>
+        </div>
+
+        <div class="form1" id="form1">
+            <form action="#">
+              <label >Full Name</label><br>
+              <input type="text" id="fname"><br>
+              <label >Email</label><br>
+              <input type="text" id="lname" ><br>
+              <label >Select fruit</label><br>
+                <select name="fruits" id="fruits">
+                  <option value="grapefruit">Grapefruit</option>
+                  <option value="apple">Apple</option>
+                  <option value="pineapple">Pineapple</option>
+                  <option value="strawberry">Strawberry</option>
+                </select><br>
+              <label id="message">Message</label><br>
+              <input type="text" id="message" ><br>
+              <input id="submit" type="submit" value="Submit">
+            </form> 
+        </div>
+
+        <div id="googleMap"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEdUDLoXCZWDv1bJaTyN-QWgri3G2Z0uE&callback=myMap"></script>
+
+    </div>
+
+  </main>
+  </body>
+</html>

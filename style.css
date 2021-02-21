@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  margin: 0% 2% 0 0;
+} 
+
+.left_area a {
+  color: black;
+  display: block;
+  background: white;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.right_area h2 {
+  float: center;
+  margin-top: -50px;
+  margin-left: 300px;
+  color: white;
+  font-size: 40px;
+}
+
+#toggle {
+  display: block;
+  margin-left: 50px;
+}
+
+.sidebar {
+  background: #2F323A;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+
+.sidebar .profile_image {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover {
+  background: #19B3D3;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+#check:checked ~ .sidebar {
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+  display: none;
+}
+
+#check:checked ~.sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+#check {
+  display: none;
+}
+
+.content {
+  margin-left: 250px;
+}
+
+#check:checked ~ .content {
+  margin-left: 60px;
+}
+
+/* Dashboard section */
+
+#dash_board {
+  display: none;
+}
+
+.dash_board img {
+  margin-left: 40px;
+  margin-top: 200px;
+}
+
+#graph1 {
+  margin-left: 60px;  
+  height: 500px; 
+}
+
+#graph2 {
+  width: 60%;
+}
+
+/* User Profile Section */
+.userprofile {
+  display: none;
+}
+
+.userprofile #profile_bg {
+  margin-left: 30%;
+  height: 400px;
+}
+
+.userprofile .profile_image {
+  width: 10%;
+  height: 50%;
+  margin-top: 2%;
+  margin-left: -7%;
+}
+
+.userprofile h4 {
+  margin-left: -7%;
+  font-size: 20px;
+}
+
+.userprofile h5 {
+  margin-left: -7%;
+  font-size: 18px;
+}
+
+.userprofile h6 {
+  margin-left: -7%;
+  font-size: 18px;
+}
+
+/* Form Section */
+
+.form1 {
+  display: none;
+  position: relative;
+  top: 150px;
+  margin-left: 60px;
+}
+
+.form1 label {
+  font-size: 17px;
+}
+
+input {
+  width: 600px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+select {
+  width: 610px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#message {
+  height: 80px;
+}
+
+#submit {
+  width: 80px;
+  color:white;
+  background: #3495eb;
+}
+
+
+/* Map Section */
+#googleMap {
+  display: none;
+  width:100%;
+  height:879px;
+  top: 70px;
+}
+
+
+
